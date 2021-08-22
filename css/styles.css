@@ -68,7 +68,7 @@ h6 {
 }
 
 .btn--extended {
-  padding: 1.5rem 7rem;
+  padding: 1.5rem 7.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -323,7 +323,7 @@ a {
 
 /* Blocks */
 .block {
-  padding: 2rem 2rem;
+  padding: 6rem 4rem;
 }
 
 .block--primary {
@@ -398,5 +398,37 @@ a {
 
   .navbar {
     padding-top: 1rem;
+  }
+}
+
+/* Hero */
+.hero {
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero__heading {
+  font-size: 2.5rem;
+}
+
+.hero__text {
+  opacity: 0.9;
+  margin: 2rem 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 2rem;
+  }
+
+  .hero {
+    max-width: 450px;
+    padding-bottom: 10rem;
   }
 }
