@@ -323,7 +323,7 @@ a {
 
 /* Blocks */
 .block {
-  padding: 6rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .block--primary {
@@ -349,5 +349,54 @@ a {
 @media screen and (min-width: 768px) {
   .block--wave {
     background-image: url(../images/bg-curvy-desktop.svg);
+  }
+}
+
+/* Navbar */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar__elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  gap: 2.7rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar__list-item {
+  opacity: 0.8;
+}
+
+.navbar__list-item:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__list {
+    gap: 3.2rem;
+  }
+
+  .navbar__icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .navbar {
+    padding-top: 1rem;
   }
 }
