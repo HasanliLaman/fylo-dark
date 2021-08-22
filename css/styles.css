@@ -204,6 +204,7 @@ a {
 /* Features */
 .feature {
   text-align: center;
+  margin-bottom: 8rem;
 }
 
 .feature__header {
@@ -219,6 +220,10 @@ a {
   .feature__header {
     font-size: 1.7rem;
     margin: 2.2rem 0 1rem;
+  }
+
+  .feature {
+    margin-bottom: 0;
   }
 }
 
@@ -308,8 +313,8 @@ a {
   .grid--2x2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 6rem;
-    grid-row-gap: 3rem;
+    column-gap: 9rem;
+    row-gap: 7rem;
   }
 
   .grid--1x2 {
@@ -430,5 +435,14 @@ a {
   .hero {
     max-width: 450px;
     padding-bottom: 10rem;
+  }
+}
+
+/*Feature block*/
+@media screen and (min-width: 768px) {
+  .features {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
