@@ -227,9 +227,9 @@ a {
   background: hsl(219, 30%, 18%);
   border-radius: 6px;
   line-height: 1.7;
-  margin: 10%;
   padding: 2.6rem 2.2rem 2.2rem;
   position: relative;
+  margin: 0 2rem 3rem;
 }
 
 .testimonial--icon::after {
@@ -474,4 +474,10 @@ a {
   .productive__text {
     margin-bottom: 2rem;
   }
+}
+
+/* Testimonials block */
+.testimonials {
+  position: relative;
+  z-index: -2;
 }
