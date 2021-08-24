@@ -92,13 +92,14 @@ h6 {
   height: 13px;
 }
 
-.icon--contact {
-  margin-right: 1.8rem;
-}
-
 .icon--arrow {
   width: 17px;
   height: 17px;
+}
+
+.icon--medium {
+  width: 21px;
+  height: 21px;
 }
 
 .icon--large {
@@ -138,6 +139,11 @@ h6 {
     width: 9px;
     height: 9px;
   }
+
+  .icon--medium {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* Links */
@@ -169,6 +175,11 @@ a {
 
 .link--underline:hover {
   text-decoration: underline;
+  opacity: 1;
+}
+
+.link--opacity:hover {
+  opacity: 1;
 }
 
 /* Inputs */
@@ -327,6 +338,10 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .grid--1x5 {
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+  }
 }
 
 /* Blocks */
@@ -340,6 +355,10 @@ a {
 
 .block--secondary {
   background-color: var(--color-secondary);
+}
+
+.block--footer {
+  background-color: var(--color-footer);
 }
 
 .block--wave {
@@ -388,10 +407,6 @@ a {
 
 .navbar__list-item {
   opacity: 0.8;
-}
-
-.navbar__list-item:hover {
-  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -524,5 +539,83 @@ a {
 
   .access__heading {
     margin-bottom: 0;
+  }
+}
+
+/* Footer */
+.footer__icon {
+  width: 140px;
+  height: 140px;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.footer__text,
+.footer__list-item {
+  opacity: 0.8;
+}
+
+.footer__text {
+  margin-top: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 1.5rem;
+}
+
+.footer__list-item:hover {
+  opacity: 1;
+}
+
+.footer__icon-text {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.footer .icon,
+.footer .icon--medium {
+  margin-top: 0.5rem;
+}
+
+.footer .grid--1x5 {
+  margin-top: -1.5rem;
+}
+
+.footer__social-media {
+  margin-top: 4.5rem;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .icon--medium {
+    margin-top: 0;
+  }
+
+  .footer__icon-text {
+    gap: 2.2rem;
+  }
+
+  .footer .grid--1x5 {
+    margin-top: -2.5rem;
+  }
+
+  .footer__list {
+    margin-top: 0;
+    justify-self: right;
+  }
+
+  .footer__social-media {
+    margin-top: 0;
+    justify-self: right;
+  }
+
+  .footer__email-phone {
+    justify-self: right;
   }
 }
