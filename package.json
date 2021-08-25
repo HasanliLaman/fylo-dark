@@ -1,0 +1,23 @@
+{
+  "name": "Fylo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmnhsnl/fylo-dark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmnhsnl/fylo-dark/issues"
+  },
+  "homepage": "https://github.com/lmnhsnl/fylo-dark#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
