@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
   --color-primary: hsl(218, 28%, 13%);
   --color-secondary: hsl(217, 28%, 15%);
@@ -55,7 +57,6 @@ h6 {
 }
 
 .btn--accent {
-  /*FIXME: btn--accent -> btn--gradient*/
   background: rgb(101, 226, 218);
   background: linear-gradient(
     135deg,
@@ -168,15 +169,21 @@ a {
   padding-bottom: 0.3rem;
 }
 
-/*TODO:hover*/
-
 .link-arrow--container:hover {
   gap: 1.5rem;
+}
+
+.link--underline {
+  transition: opacity 0.1s;
 }
 
 .link--underline:hover {
   text-decoration: underline;
   opacity: 1;
+}
+
+.link--opacity {
+  transition: opacity 0.1s;
 }
 
 .link--opacity:hover {
@@ -248,10 +255,6 @@ a {
   padding: 2.6rem 2.2rem 2.2rem;
   position: relative;
   margin: 0 2rem 3rem;
-}
-
-.testimonial:hover {
-  transform: scale(1.5);
 }
 
 .testimonial--icon::after {
@@ -598,6 +601,7 @@ a {
 
 .footer__list-item {
   margin-bottom: 1.5rem;
+  transition: opacity 0.1s;
 }
 
 .footer__list-item:hover {
@@ -663,6 +667,7 @@ a {
 
 .credits__link {
   text-decoration: underline;
+  transition: color 0.15s;
 }
 
 .credits__link:hover {

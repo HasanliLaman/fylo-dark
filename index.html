@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta
+      name="description"
+      content="Store all your most important files in one secure location."
+    />
+    <meta property="og:title" content="Fylo..." />
+    <meta
+      property="og:description"
+      content="Fylo stores all your most important files in one secure location.
+    Access them wherever you need, share and collaborate with friends
+    family, and co-workers."
+    />
+    <meta property="og:type" content="website" />
+
     <link
       rel="icon"
       type="image/png"
@@ -19,13 +32,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="block block--secondary navbar">
       <nav class="container navbar__elements">
-        <a href="#"
+        <a aria-label="Navbar icon" href="#"
           ><svg class="icon navbar__icon">
             <use href="images/sprite.svg#logo"></use>
           </svg>
@@ -207,7 +219,12 @@
             would be happy to help you.
           </p>
           <div class="input-group">
-            <input type="email" class="input" placeholder="email@example.com" />
+            <input
+              aria-label="Access"
+              type="email"
+              class="input"
+              placeholder="email@example.com"
+            />
             <button class="btn btn--accent">Get Started For Free</button>
           </div>
         </div>
@@ -267,10 +284,18 @@
       Challenge by
       <a
         class="credits__link"
+        rel="noopener"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a class="credits__link" href="#">Laman Hasanli</a>.
+      >. Coded by
+      <a
+        class="credits__link"
+        rel="noopener"
+        target="_blank"
+        href="https://github.com/lmnhsnl"
+        >Laman Hasanli</a
+      >.
     </section>
 
     <script
