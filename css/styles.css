@@ -118,6 +118,7 @@ h6 {
 }
 
 .fab {
+  cursor: pointer;
   border: 1px solid white;
   border-radius: 100%;
   margin-right: 0.8rem;
@@ -249,6 +250,10 @@ a {
   margin: 0 2rem 3rem;
 }
 
+.testimonial:hover {
+  transform: scale(1.5);
+}
+
 .testimonial--icon::after {
   background-image: url("../images/bg-quotes.png");
   background-size: 25px 23px;
@@ -346,7 +351,7 @@ a {
 
 /* Blocks */
 .block {
-  padding: 6rem 4rem;
+  padding: 2.5rem 3rem;
 }
 
 .block--primary {
@@ -365,7 +370,7 @@ a {
   background-image: url(../images/bg-curvy-mobile.svg);
   background-position-y: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 50%;
 }
 
 .container {
@@ -415,8 +420,8 @@ a {
   }
 
   .navbar__icon {
-    width: 75px;
-    height: 75px;
+    width: 145px;
+    height: 100px;
   }
 
   .navbar {
@@ -462,15 +467,24 @@ a {
 }
 
 /* Feature block */
+.features {
+  margin-top: 5rem;
+}
+
 @media screen and (min-width: 768px) {
   .features {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -5rem;
   }
 }
 
 /* Block productive */
+.productive {
+  padding-top: 1rem;
+}
+
 .productive__image {
   width: 100%;
   margin-bottom: 3rem;
@@ -481,6 +495,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .productive {
+    padding-top: 7.5rem;
+  }
+
   .productive__image {
     margin-bottom: 0rem;
   }
@@ -499,8 +517,15 @@ a {
 
 /* Testimonials block */
 .testimonials {
+  padding-top: 14rem;
   position: relative;
   z-index: -2;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    padding-bottom: 8.5rem;
+  }
 }
 
 /* Access block */
@@ -511,6 +536,8 @@ a {
   max-width: 700px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: -12rem;
+  transform: translateY(20rem);
 }
 
 .access__heading {
@@ -535,6 +562,7 @@ a {
 
   .access {
     padding: 4rem;
+    transform: translateY(15rem);
   }
 
   .access__heading {
@@ -543,15 +571,19 @@ a {
 }
 
 /* Footer */
+.footer {
+  padding-top: 20rem;
+}
+
 .footer__icon {
-  width: 140px;
+  width: 160px;
   height: 140px;
 }
 
 .footer__list {
   list-style: none;
   padding-left: 0;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   margin-bottom: 0;
 }
 
@@ -593,6 +625,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 4rem;
+    padding-top: 14rem;
+  }
+
   .footer .icon--medium {
     margin-top: 0;
   }
@@ -618,4 +655,16 @@ a {
   .footer__email-phone {
     justify-self: right;
   }
+}
+
+.credits {
+  text-align: center;
+}
+
+.credits__link {
+  text-decoration: underline;
+}
+
+.credits__link:hover {
+  color: var(--color-cyan);
 }
