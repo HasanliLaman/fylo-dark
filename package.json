@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/lmnhsnl/fylo-dark#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.3"
   }
 }
